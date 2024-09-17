@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/practice01.css">
     <title>電卓</title>
 </head>
 <body>
     <form action="practice01.html" method="post"></form>
     <div id="number">
-        <p><input type="number" class="num1" size="10"></p>
-        <p><input type="number" class="num2" size="10"></p>
+        <p><input type="text" id="num1" size="10"></p>
+        <p>+</p>
+        <p><input type="text" id="num2" size="10"></p>
+        <p>=</p>
+        <p><input type="text" id="ans" size="10"></p>
     </div>
+    <button id="btn">計算</button>
+
+    <script src="js/practice01.js"></script>
 </body>
 </html>
