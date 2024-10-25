@@ -14,5 +14,5 @@ const btn=document.getElementById("btn");
 btn.addEventListener("click",()=>{
     console.log("click");
     txt.innerHTML="goodbye";
-    document.body.style.backgroundColor="black";
+    document.body.style.backgroundColor="tomato";
 })

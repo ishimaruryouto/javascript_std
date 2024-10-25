@@ -1,0 +1,88 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.button_wrap button{
+    font-family: serif;
+    font-size: 4.5rem;
+    color: #fff;
+    background-color: #ADD8E6;
+    border: #ADD8E6 1px solid;
+    border-radius: 0.5rem;
+    padding: 0 3.2rem;
+    line-height: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button_wrap{
+    position: relative;
+    margin-top: 30rem;
+    margin-left: 50rem;
+}
+
+.button_wrap button:hover{
+    background-color: #FFCCFF;
+    border-color: #FFCCFF;
+}
+
+.modal_bg{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal_wrap{
+    position: absolute;
+    width: 50%;
+    /* margin: 0 30rem; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: modal_open;
+    animation-duration: 2s;
+}
+
+@keyframes modal_open{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.open{
+    display: flex;
+    background-color: #ADD8E6;
+    padding: 2rem;
+}
+
+.open p{
+    font-size: 3.2rem;
+    font-family: serif;
+}
+
+.back{
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+}
+
+.js_std{
+    font-size: 2.2rem;
+    font-family: serif;
+    background-color: #fff;
+    padding: 2rem;
+}
+
