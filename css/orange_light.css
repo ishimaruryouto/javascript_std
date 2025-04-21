@@ -1,0 +1,31 @@
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(0deg, #121c2b, #070831);
+}
+
+.circle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ffa424, #ff5757);
+    border-radius: 50%;
+    box-shadow: 0 0 8px #ff5757, 0 0 16px #ff5757, 0 0 24px #ff5757, 0 0 30px #ff5757;
+    opacity: 1;
+    transition: opacity 1s ease;
+    animation: bg_animation 3s linear forwards;
+}
+
+
+@keyframes bg_animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
