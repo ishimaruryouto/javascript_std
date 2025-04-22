@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>名言おみくじ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        #quote {
+            font-size: 1.5rem;
+            margin: 30px;
+            padding: 20px;
+            background: #fff8dc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: #87cefa;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00bfff;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>学校の名言・迷言集</h1>
+    <div id="quote">「ここに名言が出るよ」</div>
+    <button onclick="showRandomQuote()">名言を引く！</button>
+
+    <script>
+        const quotes = [
+            "「やる気はある。でも眠い。」 ー 太田くん",
+            "「テスト勉強っていつ始めればいいんですか？」 ー 佐藤さん",
+            "「今日の気温は“やる気0度”やな」 ー 鈴木先生",
+            "「ノートは未来の自分へのラブレターやで」 ー 高橋先生",
+            "「これは数学じゃなくてパズルです」 ー 田中くん"
+        ];
+
+        function showRandomQuote() {
+            const index = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").textContent = quotes[index];
+        }
+    </script>
+
+</body>
+
+</html>
