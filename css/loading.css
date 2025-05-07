@@ -1,0 +1,80 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    background-image: url("../img/IMG_3309.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loader {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: tomato; */
+}
+
+.loader span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid skyblue;
+    animation: animate 5s linear infinite;
+}
+
+.loader span:nth-child(1) {
+    border-radius: 80% 20% 18% 82% / 67% 27% 73% 33%;
+}
+
+.loader span:nth-child(2) {
+    animation-direction: reverse;
+    border-radius: 28% 72% 27% 73% / 67% 27% 73% 33%;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 3s;
+    border-radius: 32% 68% 55% 45% / 67% 79% 21% 33%;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaded {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+h2 {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #fff;
+    visibility: hidden;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+
+}
