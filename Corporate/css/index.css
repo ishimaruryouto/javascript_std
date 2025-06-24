@@ -20,6 +20,10 @@ img {
     /* height: 600px; */
 }
 
+:root {
+    --text-size: 1.4rem;
+}
+
 
 header {
     height: 80px;
@@ -47,7 +51,7 @@ nav {
 
             a {
                 color: #000;
-                font-size: 1.4rem;
+                font-size: var(--text-size);
             }
         }
     }
@@ -61,16 +65,16 @@ nav {
 
 
 .ttl {
-
     h2 {
         font-size: 3.6rem;
         font-weight: lighter;
         letter-spacing: 10px;
+        margin-top: 230px;
         /* margin-bottom: 3px; */
     }
 
     p {
-        font-size: 1.4rem;
+        font-size: var(--text-size);
         font-weight: lighter;
         margin-bottom: 30px;
     }
@@ -81,25 +85,38 @@ nav {
         width: 40px;
         height: 1px;
         background: #000;
+        margin-bottom: 55px;
     }
+}
+
+.news {
+    /* width: 90%; */
+    max-width: 1032px;
+    /* border: 1px solid tomato; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 auto;
 }
 
 .time_list_wrap {
     display: flex;
     justify-content: space-between;
-    /* width: calc(100/3); */
+    width: 70%;
+    /* border: 1px solid tomato; */
+    /* margin: 0 auto; */
 }
 
 
 .time_list {
+    width: calc(100%/3);
     border-left: 1px solid #000;
     padding: 10px 20px;
 
     .time {
-        line-height: 4;
+        margin-bottom: 10px;
 
         time {
-            font-size: 1.4rem;
+            font-size: var(--text-size);
         }
 
         span {
@@ -111,11 +128,46 @@ nav {
         }
 
         p {
-            font-size: 1.4rem;
+            font-size: var(--text-size);
         }
     }
 }
 
 .time_list:first-child {
     border: none;
+    padding: 10px 0;
+    /* border: 1px solid tomato; */
+
+}
+
+
+
+.about {
+    display: flex;
+    width: 100%;
+
+    .ttl_txt {
+        width: 45%;
+        padding: 180px 5% 0 5%;
+
+        p {
+            font-size: var(--text-size);
+        }
+    }
+}
+
+.business {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.item_flex_wrap {
+    display: flex;
+    gap: 65px;
+
+    .item {
+        p {
+            font-size: var(--text-size);
+        }
+    }
 }
